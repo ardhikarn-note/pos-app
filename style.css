@@ -1,0 +1,103 @@
+/* ALL */
+@font-face {
+  font-family: Airbnb;
+  src: url("../cereal-airbnb-font-master/AirbnbCereal-Black.ttf");
+}
+body {
+  font-family: Airbnb;
+}
+
+/* HEADER */
+nav {
+  height: 100px;
+}
+
+.item {
+  background-color: rgba(190, 195, 202, 0.3);
+  border: none;
+}
+
+.fa-search,
+.fa-bars {
+  font-size: 25px;
+}
+
+.seach:hover {
+  border-color: white;
+}
+
+.midle-side-main,
+.menu-hamburger {
+  background-color: rgba(190, 195, 202, 0.3);
+}
+
+.midle-side-main img {
+  height: 200px;
+  border-radius: 10px 10px 0 0;
+}
+
+.right-side-main img {
+  width: 200px;
+  height: 200px;
+}
+
+.left-side-main,
+nav,
+.nav-first {
+  box-shadow: 0px 0px 6px 1px rgba(190, 195, 202, 0.3);
+}
+
+.badge {
+  background-color: #57cad5;
+}
+
+.cart-nav {
+  height: 100px;
+  box-shadow: 0px 0px 6px 1px rgba(190, 195, 202, 0.3);
+}
+
+.cart p {
+  color: #cecece;
+}
+
+.cart h4 {
+  margin-top: -40px;
+}
+
+.btn-checkout {
+  background-color: #57cad5;
+}
+
+.btn-cancel {
+  background-color: #f24f8a;
+}
+
+.cart-menu img {
+  height: 100px;
+  width: 100px;
+}
+
+.btn-add,
+.price {
+  margin-top: 35px;
+}
+
+.cart-shop img {
+  border-radius: 5px;
+}
+.btn-add button {
+  width: 30px;
+  border: 1px solid #82de3a;
+  color: #82de3a;
+}
+
+.checked img {
+  -webkit-filter: brightness(30%);
+}
+
+.checklist {
+  position: absolute;
+  font-size: 40px;
+  top: 35%;
+  left: 43%;
+}
