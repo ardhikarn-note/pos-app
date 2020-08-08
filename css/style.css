@@ -41,10 +41,13 @@ nav {
   height: 200px;
 }
 
-.left-side-main,
 nav,
 .nav-first {
   box-shadow: 0px 0px 6px 1px rgba(190, 195, 202, 0.3);
+}
+
+.left-side-main {
+  box-shadow: 1px 1px 0px 0px rgba(190, 195, 202, 0.3);
 }
 
 .badge {
@@ -92,7 +95,7 @@ nav,
 }
 
 .checked img {
-  -webkit-filter: brightness(30%);
+  filter: brightness(30%);
 }
 
 .checklist {
@@ -100,4 +103,56 @@ nav,
   font-size: 40px;
   top: 35%;
   left: 43%;
+}
+
+/* HISTORY */
+
+.today-income {
+  height: 203px;
+  background: linear-gradient(
+    278.29deg,
+    #fbb2b4 30.05%,
+    rgba(255, 143, 178, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(255, 143, 178, 0.25));
+  border-radius: 10px;
+}
+
+.orders {
+  height: 203px;
+  background: linear-gradient(
+    278.29deg,
+    #29dfff 30.05%,
+    rgba(41, 223, 255, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(41, 223, 255, 0.25));
+  border-radius: 10px;
+}
+
+.this-years-income {
+  height: 203px;
+  background: linear-gradient(
+    278.29deg,
+    #ab84c8 30.05%,
+    rgba(241, 201, 236, 0) 133.19%
+  );
+  filter: drop-shadow(10px 15px 10px rgba(241, 201, 236, 0.25));
+  border-radius: 10px;
+}
+
+.option {
+  margin-left: -30px;
+  margin-right: -30px;
+}
+
+.today-income-info {
+  position: absolute;
+  top: 27%;
+  left: 15%;
+}
+
+.chart-history,
+.recent-order {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
 }

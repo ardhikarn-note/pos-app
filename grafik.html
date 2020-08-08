@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="bootstrap-4.5.2-dist/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <title>History</title>
+
+    <!-- main css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- responsive -->
+    <link rel="stylesheet" href="css/responsive.css" />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/3f5c3f6055.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- chart -->
+    <script src="bootstrap-4.5.2-dist/js/chart.min.js"></script>
+  </head>
+  <body>
+    <!-- TOP -->
+    <nav class="navbar navbar-light bg-white row p-0 m-0">
+      <a
+        class="navbar-toggler border-0 col-1 text-center"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarToggleExternalContent"
+        aria-controls="navbarToggleExternalContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="fas fa-bars text-dark"></span>
+      </a>
+      <h3 class="text-center col-11">History</h3>
+    </nav>
+
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="menu-hamburger d-flex justify-content-around p-4">
+        <div class="home">
+          <img src="img/fork.png" alt="" />
+        </div>
+        <div class="board">
+          <img src="img/clipboard.png" alt="" />
+        </div>
+        <div class="add">
+          <img src="img/add.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- END TOP -->
+
+    <!-- MAIN-->
+
+    <main class="row container-fluid m-0 p-0">
+      <div class="left-side-main text-center col-sm-12 col-md-12 col-lg-1">
+        <div class="home my-3">
+          <img src="img/fork.png" alt="" />
+        </div>
+        <div class="home my-5">
+          <img src="img/clipboard.png" alt="" />
+        </div>
+        <div class="home my-5">
+          <img src="img/add.png" alt="" />
+        </div>
+      </div>
+      <div class="chart-side col-lg-11">
+        <div class="row">
+          <div class="chart-info col-11 mx-auto">
+            <div class="row option">
+              <div class="col-12 col-md-6 col-lg-4 my-3">
+                <div class="today-income item card"></div>
+                <div class="today-income-info">
+                  <p class="mb-1">Today's Income</p>
+                  <h3 class="mb-2">Rp. 1.000.000</h3>
+                  <p>+2% Yesterday</p>
+                </div>
+                <div class="object1"></div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-4 my-3">
+                <div class="orders item card"></div>
+                <div class="today-income-info">
+                  <p class="mb-1">Orders</p>
+                  <h3 class="mb-2">3.270</h3>
+                  <p>+5% Last Week</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-12 col-lg-4 my-3">
+                <div class="this-years-income item card"></div>
+                <div class="today-income-info">
+                  <p class="mb-1">This Years Income</p>
+                  <h3 class="mb-2">Rp. 100.000.000.000</h3>
+                  <p>+10% Last Year</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chart-history mx-auto col-11 my-5 py-3">
+            <div class="mx-2">
+              <h1>Revenue</h1>
+              <canvas class="col-12 my-chart" id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="recent-order col-11 mx-auto my-4 py-3">
+            <div class="mx-2">
+              <h3 class="ml-4">Recent Order</h3>
+              <div class="tables text-center">
+                <table class="table table-borderless">
+                  <thead>
+                    <tr>
+                      <th scope="col">INVOICES</th>
+                      <th scope="col">CASHIER</th>
+                      <th scope="col">DATE</th>
+                      <th scope="col">ORDERS</th>
+                      <th scope="col">AMOUNT</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <th scope="row">#10928</th>
+                      <td>Cashier 1</td>
+                      <td>06 October 2019</td>
+                      <td>Ice Tea, Salad With peanut sauce</td>
+                      <td>Rp. 120.000</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- END MAIN -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="bootstrap-4.5.2-dist/js/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="bootstrap-4.5.2-dist/js/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="bootstrap-4.5.2-dist/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
