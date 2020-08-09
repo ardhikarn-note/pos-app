@@ -1,9 +1,4 @@
 @media only screen and (max-width: 768px) {
-  nav h3 {
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-
   .left-side-main {
     display: none;
   }

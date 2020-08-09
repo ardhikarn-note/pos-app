@@ -8,8 +8,8 @@ body {
 }
 
 /* HEADER */
-nav {
-  height: 100px;
+.cart-nav-up {
+  margin: -8px 0;
 }
 
 .item {
