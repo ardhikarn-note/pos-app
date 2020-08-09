@@ -156,3 +156,39 @@ nav,
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
 }
+
+.print,
+.cancel-add {
+  background-color: #f24f8a;
+}
+
+.send-email,
+.confirm-add {
+  background-color: #57cad5;
+}
+
+.cancel-add,
+.confirm-add {
+  width: 100px;
+}
+
+.print,
+.send-email {
+  border-radius: 10px;
+  height: 60px;
+}
+
+input,
+select {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  height: 35px;
+}
+
+.input-price {
+  width: 10px;
+}
+
+option {
+  color: #d0d1d1;
+}

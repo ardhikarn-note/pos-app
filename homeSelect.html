@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 
-    <title>Hello, world!</title>
+    <title>Home Select</title>
 
     <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
@@ -42,9 +42,9 @@
       >
         <span class="fas fa-bars text-dark"></span>
       </a>
-      <h3 class="text-center col-lg-6 col-8">Food Items</h3>
-      <a class="btn m-0 p-0">
-        <i class="fas fa-search"></i>
+      <h3 class="text-center col-lg-6 col-10">Food Items</h3>
+      <a class="btn m-0 p-0 col-1">
+        <i class="fas fa-search text-right"></i>
       </a>
       <div class="col-lg-4 col-sm-12">
         <div class="cart-nav text-center align-items-center row">
@@ -65,7 +65,100 @@
           <img src="img/clipboard.png" alt="" />
         </div>
         <div class="add">
-          <img src="img/add.png" alt="" />
+          <img
+            class="btn"
+            src="img/add.png"
+            data-toggle="modal"
+            data-target="#add-chart-mobile"
+            alt=""
+          />
+          <div
+            class="modal fade pr-0"
+            id="add-chart-mobile"
+            data-backdrop="static"
+            data-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body text-left">
+                  <h4 class="col-3 col-md-5">Add Item</h4>
+                  <form class="my-5">
+                    <div class="form-group">
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="name"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="input-name col-lg-9 pr-0 border-0"
+                          id="name"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="image"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Image</label
+                        >
+                        <input
+                          type="text"
+                          class="input-image col-lg-9 pr-0 border-0"
+                          id="image"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="price"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Price</label
+                        >
+                        <input
+                          type="text"
+                          class="input-price col-lg-6 pr-0 border-0"
+                          id="price"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="category"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Category</label
+                        >
+                        <select
+                          type="text"
+                          class="input-price col-lg-4 pr-0 border-0"
+                          aria-placeholder="soo"
+                          id="price"
+                        >
+                          <option value="" selected disabled>Category</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="btn-modal text-right px-3">
+                    <button
+                      type="button"
+                      class="btn btn-secondary cancel-add border-0 mr-2 px-4"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary confirm-add border-0 mr-2 px-4"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -78,11 +171,106 @@
         <div class="home my-3">
           <img src="img/fork.png" alt="" />
         </div>
-        <div class="home my-5">
+        <div class="clipboard my-5">
           <img src="img/clipboard.png" alt="" />
         </div>
-        <div class="home my-5">
-          <img src="img/add.png" alt="" />
+        <div class="add my-5">
+          <img
+            class="btn"
+            src="img/add.png"
+            data-toggle="modal"
+            data-target="#add-chart"
+            alt=""
+          />
+          <div
+            class="modal fade pr-0"
+            id="add-chart"
+            data-backdrop="static"
+            data-keyboard="false"
+            tabindex="-1"
+            aria-labelledby="staticBackdropLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+                <div class="modal-body text-left">
+                  <h4 class="col-3 col-md-5">
+                    Add Item
+                  </h4>
+                  <form class="my-5">
+                    <div class="form-group">
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="name"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Name</label
+                        >
+                        <input
+                          type="text"
+                          class="input-name col-lg-9 pr-0 border-0"
+                          id="name"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="image"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Image</label
+                        >
+                        <input
+                          type="text"
+                          class="input-image col-lg-9 pr-0 border-0"
+                          id="image"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="price"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Price</label
+                        >
+                        <input
+                          type="text"
+                          class="input-price col-lg-6 pr-0 border-0"
+                          id="price"
+                        />
+                      </div>
+                      <div class="table row align-items-center mx-0 px-3">
+                        <label
+                          for="category"
+                          class="col-lg-3 my-auto text-left pl-0"
+                          >Category</label
+                        >
+                        <select
+                          type="text"
+                          class="input-price col-lg-4 pr-0 border-0"
+                          aria-placeholder="soo"
+                          id="price"
+                        >
+                          <option value="" selected disabled>Category</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                  <div class="btn-modal text-right mt-5">
+                    <button
+                      type="button"
+                      class="btn btn-secondary cancel-add border-0 mr-2 px-4"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-primary confirm-add border-0 mr-2 px-4"
+                    >
+                      Add
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div class="midle-side-main col-sm-12 col-md-12 col-lg-7 m-0">
@@ -270,7 +458,7 @@
               Checkout
             </button>
             <div
-              class="modal fade"
+              class="modal fade pr-0"
               id="checkout"
               data-backdrop="static"
               data-keyboard="false"
@@ -278,33 +466,48 @@
               aria-labelledby="staticBackdropLabel"
               aria-hidden="true"
             >
-              <div class="modal-dialog">
+              <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content">
                   <div class="modal-body text-left">
-                    <div class="row">
-                      <h4 class="col-md-5 mb-0">Checkout</h4>
-                      <p class="col-md-7 text-right">
+                    <div class="top-receipt row">
+                      <h4 class="col-3 col-md-5">Checkout</h4>
+                      <p class="col-9 col-md-7 text-right">
                         Receipt no:#010410919
                       </p>
                       <p class="col-md-12 text-left">
                         Cashier : Pevita Pearce
                       </p>
                     </div>
+                    <div class="mid-receipt row my-4">
+                      <p class="col-6 text-left">Coffe Latte 1x</p>
+                      <p class="col-6 text-right">Rp. 15.000</p>
+                      <p class="col-6 text-left">Black Forest 1x</p>
+                      <p class="col-6 text-right">Rp. 30.000</p>
+                      <p class="col-6 text-left">Salmon Truffle Teriyaki 1x</p>
+                      <p class="col-6 text-right">Rp. 60.000</p>
+                      <p class="col-6 text-left">Ppn 10%</p>
+                      <p class="col-6 text-right">Rp. 10.500</p>
+                      <p class="col-12 text-right">Total : Rp. 115.500</p>
+                      <p class="col-12 text-left">Payment : Cash</p>
+                    </div>
                     <div
                       class="btn-modal d-flex flex-column text-center justify-content-between"
                     >
                       <button
                         type="button"
-                        class="btn btn-secondary"
+                        class="btn btn-secondary print border-0"
                         data-dismiss="modal"
                       >
-                        Close
+                        Print
                       </button>
                       <div class="modal-body text-center py-1">
                         <h5>Or</h5>
                       </div>
-                      <button type="button" class="btn btn-primary">
-                        Understood
+                      <button
+                        type="button"
+                        class="btn btn-primary send-email border-0"
+                      >
+                        Send Email
                       </button>
                     </div>
                   </div>

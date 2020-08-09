@@ -1,9 +1,11 @@
 @media only screen and (max-width: 768px) {
+  nav h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   .left-side-main {
     display: none;
-  }
-  .fa-search {
-    margin-right: 6px;
   }
 
   .btn-add,
@@ -24,6 +26,10 @@
 
 /* Large devices (desktops, 992px and up) */
 @media only screen and (max-width: 992px) {
+  nav h3 {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
   .fa-search {
     margin-right: 20px;
   }
