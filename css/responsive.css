@@ -17,6 +17,10 @@
     align-items: center;
     margin-top: 20px;
   }
+
+  th {
+    text-transform: lowercase;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
