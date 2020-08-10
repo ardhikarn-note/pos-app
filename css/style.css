@@ -105,6 +105,10 @@ nav,
   left: 43%;
 }
 
+.span-quantity {
+  font-size: 20px;
+}
+
 /* HISTORY */
 
 .today-income {
